@@ -1,0 +1,159 @@
+{% extends "base.html" %}
+{% block title %} About {% endblock title %}
+
+{% block content %}
+
+
+<div class="container-fluid px-0">
+    <img src="static/img/about.jpg" alt="..." class="picture d-block w-100">
+    <h1 class="heading text-center"> ABOUT </h1>
+
+        <section id="about" class="about" style="background-color:#1d1a16;">
+            <div class="container-fluid" data-aos="fade-up">
+
+                <div class="row" style="margin:0 50px;">
+                    <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="about-img">
+                            <img src="static/img/let.jpg" alt="">
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+                        <h3 class="story">Our Story</h3>
+                        <p class="text-white-50 text-wrap">
+                            TastyGo, nestled in the heart of Amritsar, beckons patrons with its alluring charm and
+                            captivating ambiance.
+                            Stepping into the cafe is akin to entering a realm of culinary enchantment where the aroma
+                            of freshly
+                            ground coffee mingles with the tantalizing scent of baked goods. The walls adorned with
+                            vintage artwork and
+                            cozy nooks invite guests to linger and lose themselves in the symphony of flavors. The
+                            baristas, artisans of
+                            the espresso machine, craft each cup with precision, creating liquid poetry in a porcelain
+                            cup. The menu, a
+                            tapestry of gastronomic delights, showcases a fusion of local spices and global
+                            inspirations, promising a
+                            journey of indulgence and discovery. At TastyGo, time stands still, and every sip and bite
+                            is a celebration
+                            of life's simple pleasures.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section id="why-us" class="why-us" style="background-image: url(static/img/hello.png); background-repeat: no-repeat; background-size: cover;">
+            <div class="container-fluid px-0" data-aos="fade-up" style="margin: 0 50px;">
+
+                <div class="section-title">
+                    <h2>Why Us</h2>
+                    <p>Why Choose Our Restaurant</p>
+                </div>
+
+                <div class="form container my-5 offset-md-5 col-lg-6">
+                    <h2 class="feedback text-center mb-5"> FEEDBACK </h2>
+                    <form method="post" action="/about">
+                        {% csrf_token %}
+
+                        <div class="mb-5">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="name" class="form-control" id="name" name="name" placeholder="Enter Your Name">
+                        </div>
+
+                        <div class="mb-5">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" name="email"
+                                placeholder="Enter Your Email">
+                        </div>
+
+                        <div class="mb-5">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" name="message" rows="7" placeholder="Enter Your Message"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary offset-md-4 mb-4 col-lg-4">Submit</button>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+
+
+        <footer id="footer">
+            <div class="footer-top">
+                <div class="container-fluid">
+                    <div class="row">
+
+                        <div class="col-lg-3 col-md-6">
+                            <div class="footer-info" style="margin-left:50px">
+                                <img src="static/img/logo.png" class="img-fluid" alt="">
+                                
+                                <div class="social-links mt-3">
+                                    <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                                    <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                                    <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                                    <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                                    <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-6 footer-links">
+                            <h4>Useful Links</h4>
+                            <ul>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Menu</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">About</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Login</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Signup</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-3">
+                            <div class="info">
+                                <div class="address">
+                                    <i class="bi bi-geo-alt"></i>
+                                    <h4>Location </h4>
+                                    <p>D-Block Ranjit Avenue, Amritsar</p>
+                                </div>
+
+                                <div class="open-hours">
+                                    <i class="bi bi-clock"></i>
+                                    <h4>Open Hours </h4>
+                                    <p>
+                                        Monday-Saturday <br>
+                                        11:00 AM - 23:00 PM
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="col-lg-4">
+                                <div class="info">
+                                    <div class="email mt-0">
+                                        <i class="bi bi-envelope"></i>
+                                        <h4>Email</h4>
+                                        <p>info.tastygo.com</p>
+                                    </div>
+
+                                    <div class="phone">
+                                        <i class="bi bi-phone"></i>
+                                        <h4>Call</h4>
+                                        <p>+91 445 657 3389</p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+        </footer>
+
+</div>
+
+
+{% endblock content %}

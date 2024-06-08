@@ -1,0 +1,159 @@
+{% extends "base.html" %}
+{% load static %}
+{% block nav_home %} active {% endblock nav_home %}
+{% block content %}
+
+<div class="container-fluid px-0">
+    <img src="static/img/about.jpg" alt="..." class="picture d-block w-100">
+    <h1 class="heading text-center"> MENU </h1>
+</div>
+
+
+<section id="menu" class="menu section-bg">
+    <div class="container-fluid px-0" data-aos="fade-up">
+        <div class="container-fluid px-0"
+            style="display: flex; flex-direction: row; justify-content:center; flex-wrap:wrap;">
+            {% for object in object_list %}
+            <div class="row" style="margin:0 0;">
+                <div class="col-md-5">
+                    <div class="card product-card custom-round" style="width:400px; height:400px; margin:15px 10px;">
+
+                        <div class="card-thumb custom-round">
+                            <div class="black-overlay">
+                                {% if object.image %}
+                                <img src="{{object.image.url}}" class="card-img-top" alt="{{object.name}}" width="350px"
+                                    min-height="350px">
+                                {% endif %}
+                            </div>
+                            <a href="{% url 'Product_product_detail' object.slug %}" class="sm-btn">Add to Cart</a>
+                        </div>
+
+                        <div class="card-body">
+                            <h6 class="name">{{object.name}}</h6>
+                            <div class="card-meta d-flex">
+                                <div class="product-price">
+                                  <span>INR {{object.price}}</span>
+                                </div>
+                              </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section id="why-us" class="why-us"
+    style="background-image: url(static/img/banner3.jpg); background-repeat: no-repeat; background-size:cover;">
+    <div class="container-fluid px-0" data-aos="fade-up">
+
+        <div class="row" style="padding:50px 50px ;">
+
+            <div class="col-lg-4">
+                <div class="box" data-aos="zoom-in" data-aos-delay="100">
+                    <span>01</span>
+                    <h4>A Gastronomic Odyssey</h4>
+                    <p>"Impeccable restaurant and diverse indian food categories make it a culinary haven for food
+                        enthusiasts."</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mt-4 mt-lg-0">
+                <div class="box" data-aos="zoom-in" data-aos-delay="200">
+                    <span>02</span>
+                    <h4> A Culinary Exploration</h4>
+                    <p>"The seamless and authentic flavors set a new standard, ensuring a delightful
+                        experience with every order."</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mt-4 mt-lg-0">
+                <div class="box" data-aos="zoom-in" data-aos-delay="300">
+                    <span>03</span>
+                    <h4> A Feast for the Senses</h4>
+                    <p>"The commitment to quality and flavor is evident in every dish, truly delivers a culinary
+                        journey worth savoring."</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<div class="container-fluid px-0">
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container-fluid">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-info" style="margin-left:50px">
+                            <img src="static/img/logo.png" class="img-fluid" alt="">
+
+                            <div class="social-links mt-3">
+                                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 footer-links">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Menu</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">About</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Login</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Signup</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="info">
+                            <div class="address">
+                                <i class="bi bi-geo-alt"></i>
+                                <h4>Location </h4>
+                                <p>D-Block Ranjit Avenue, Amritsar</p>
+                            </div>
+
+                            <div class="open-hours">
+                                <i class="bi bi-clock"></i>
+                                <h4>Open Hours </h4>
+                                <p>
+                                    Monday-Saturday <br>
+                                    11:00 AM - 23:00 PM
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="info">
+                            <div class="email mt-0">
+                                <i class="bi bi-envelope"></i>
+                                <h4>Email</h4>
+                                <p>info.tastygo.com</p>
+                            </div>
+
+                            <div class="phone">
+                                <i class="bi bi-phone"></i>
+                                <h4>Call</h4>
+                                <p>+91 445 657 3389</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </footer>
+</div>
+
+{% endblock content %}

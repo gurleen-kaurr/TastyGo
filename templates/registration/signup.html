@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block content %}
+<h2>{{url}}</h2>
+
+<div class="container my-5 ps-5 offset-md-4 col-lg-3">
+            <h1 class="login text-lg-center mr-3 mb-3">Register</h1>
+
+        <div class="container ms-5" style="offset-md-5 col-lg-4">
+            <form method="post">
+            {% csrf_token %}
+
+            {{form|crispy}}
+                <div class="offset-md-4 col-lg-3 ms-4">
+                    <button type="submit" class="btn btn-warning rounded-5" style="padding:10px 25px;">Register</button>
+                </div>
+            </form>
+        </div>
+    
+</div>
+{% endblock %}

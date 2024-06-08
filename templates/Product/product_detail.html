@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<div class="container-fluid px-0">
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <img src="{{object.image.url}}" class="card-img-top rounded-3" alt="..." style="height: 500px; width:600px; margin-left:50px">
+        </div>
+        <div class="col-md-6">
+            <div class="card" style="height:300px ; width:500px; border: 5px outset black;">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><b>Product : {{object.name}}</b></li>
+                <li class="list-group-item"><b> Price </b> {{object.price}}/-</li>
+                  <li class="list-group-item"><a href="{% url 'Product_order_create' object.slug %}" class="btn btn-warning">Buy Now</a></li>
+              </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

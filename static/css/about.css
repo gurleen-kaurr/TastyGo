@@ -1,0 +1,186 @@
+.about 
+  {
+    background-size: cover;
+    position: relative;
+    padding: 80px 0;
+  }
+  
+  .about:before 
+  {
+    content: "";
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .about .about-img 
+  {
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .about .about-img img 
+  {
+    max-width: 100%;
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+  }
+  
+  .about .about-img::before 
+  {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: 60px;
+    height: 60px;
+    z-index: 1;
+    content: "";
+    border-left: 5px solid #cda45e;
+    border-top: 5px solid #cda45e;
+    transition: 0.5s;
+  }
+  
+  .about .about-img::after 
+  {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    width: 60px;
+    height: 60px;
+    z-index: 2;
+    content: "";
+    border-right: 5px solid #cda45e;
+    border-bottom: 5px solid #cda45e;
+    transition: 0.5s;
+  }
+  
+  .about .about-img:hover 
+  {
+    transform: scale(1.03);
+  }
+  
+  .about .about-img:hover::before 
+  {
+    left: 10px;
+    top: 10px;
+  }
+  
+  .about .about-img:hover::after 
+  {
+    right: 10px;
+    bottom: 10px;
+  }
+  
+  .about .content 
+  {
+    position: relative;
+  }
+  
+  .about .content h3 
+  {
+    font-weight: 600;
+    font-size: 70px;
+    margin:7px 0;
+    font-family: "Playfair Display", serif;
+    color: #cda45e;
+  }
+  
+  
+  .about .content p 
+  {
+    margin-bottom: 0;
+    width:90%;
+    font-size: 19px;
+  }
+  
+  @media (min-width: 1024px) 
+  {
+    .about 
+    {
+      background-attachment: fixed;
+    }
+  }
+ 
+
+
+
+
+
+  .why-us .box {
+    padding: 50px 30px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    transition: all ease-in-out 0.3s;
+    background: #1a1814;
+  }
+  
+  .why-us .box span {
+    display: block;
+    font-size: 28px;
+    font-weight: 700;
+    color: #cda45e;
+  }
+  
+  .why-us .box h4 {
+    font-size: 24px;
+    font-weight: 600;
+    padding: 0;
+    margin: 20px 0;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .why-us .box p {
+    color: #aaaaaa;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .why-us .box:hover {
+    background: #cda45e;
+    padding: 30px 30px 70px 30px;
+    box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
+  }
+  
+  .why-us .box:hover span,
+  .why-us .box:hover h4,
+  .why-us .box:hover p {
+    color: #fff;
+  }
+  
+  
+
+
+
+  .form
+  {
+    position:relative; 
+    top:182%; 
+    border:5px solid snow; 
+    padding:30px;
+    background-color:#1c1c14;
+    opacity:0.9 ;
+    filter:brightness(100%)
+  }
+
+  .feedback
+  {
+    font-weight: 600;
+    font-size: 36px;
+    margin:7px 0;
+    font-family: "Playfair Display", serif;
+    color: #cda45e; 
+  }
+
+  .form-label
+  {
+    font-weight: 600;
+    font-size: 18px;
+    margin:7px 0;
+    font-family: "Playfair Display", serif;
+    color: #cda45e; 
+  }
+
+

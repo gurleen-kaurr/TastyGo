@@ -1,0 +1,383 @@
+  #header
+  {
+    background:transparent;
+    border-bottom: 1px solid transparent;
+    transition: all 0.5s;
+    z-index: 997;
+    padding: 0 0;
+    top: 40px;
+  }
+  
+  #header.header-scrolled 
+  {
+    top: 0;
+    background: rgba(0, 0, 0, 0.85);
+    border-bottom: 1px solid #37332a;
+  }
+  
+  #header .logo 
+  {
+    font-size: 28px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  #header .logo a 
+  {
+    color: #fff;
+  }
+  
+  #header .logo img 
+  {
+    max-height: 60px;
+  }
+  
+
+
+
+
+  .book-a-table-btn 
+  {
+    margin: 0 0 0 15px;
+    border: 2px solid #cda45e;
+    color: #fff;
+    border-radius: 50px;
+    padding: 9px 25px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    text-decoration: none;
+  }
+  
+  .book-a-table-btn:hover 
+  {
+    background: #cda45e;
+    color: #fff;
+  }
+  
+  @media (max-width: 992px) 
+  {
+    .book-a-table-btn 
+    {
+      margin: 0 15px 0 0;
+      padding: 8px 20px;
+    }
+  }
+  
+
+
+
+
+  .navbar 
+  {
+    padding: 0;
+  }
+  
+  .navbar ul 
+  {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+  }
+  
+  .navbar li 
+  {
+    position: relative;
+  }
+  
+  .navbar a,
+  .navbar a:focus 
+  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 10px 30px;
+    color: #fff;
+    white-space: nowrap;
+    transition: 0.3s;
+    font-size: 20px;
+  }
+  
+  .navbar a i,
+  .navbar a:focus i 
+  {
+    font-size: 12px;
+    line-height: 0;
+    margin-left: 5px;
+  }
+  
+  .navbar a:hover,
+  .navbar .active,
+  .navbar .active:focus,
+  .navbar li:hover>a 
+  {
+    color: #d9ba85;
+  }
+
+  
+
+
+
+  .image
+  {
+    height: 700px;
+    width: 1600px;
+    object-fit: cover;
+    filter:brightness(40%);
+  }
+
+  .picture
+  {
+    height:460px;
+    width: 400px;
+    object-fit:cover;
+    filter:brightness(40%);
+  }
+
+ .heading
+  {
+    height: 100%;
+    width: 100%;
+    font: bold 60px serif;
+    color: snow;
+    position: absolute;
+    top: 82%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+
+
+
+  section 
+  {
+    padding: 60px 0;
+    overflow: hidden;
+  }
+  
+  .section-bg 
+  {
+    background-color:#0c0b09;
+  }
+  
+  .section-title 
+  {
+    padding-bottom: 40px;
+  }
+  
+  .section-title h2 
+  {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0;
+    line-height: 1px;
+    margin: 0 0 5px 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #aaaaaa;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .section-title h2::after 
+  {
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 4px 10px;
+  }
+  
+  .section-title p 
+  {
+    margin: 0;
+    margin: 0;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: "Playfair Display", serif;
+    color: #cda45e;
+  }
+  
+
+
+
+
+
+  #footer 
+  {
+    background: black;
+    padding: 0 0 30px 0;
+    color: #fff;
+    font-size: 14px;
+  }
+  
+  #footer .footer-top 
+  {
+    background: #0c0b09;
+    border-top: 1px solid #37332a;
+    border-bottom: 1px solid #28251f;
+    padding: 60px 0 30px 0;
+    background-repeat: no-repeat;
+  }
+  
+  #footer .footer-top .footer-info 
+  {
+    margin-bottom: 30px;
+  }
+  
+  #footer .footer-top .footer-info .img-fluid 
+  {
+    margin: 0 0 20px 0;
+    padding: 2px 0 2px 0;
+    height: 200px;
+    width:215px;
+  }
+  
+  #footer .footer-top .social-links a 
+  {
+    font-size: 18px;
+    display: inline-block;
+    background: #28251f;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+  }
+  
+  #footer .footer-top .social-links a:hover 
+  {
+    background: #cda45e;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  #footer .footer-top h4 
+  {
+    font-size: 16px;
+    font-weight: 600;
+    color: #cda45e;
+    position: relative;
+    padding-bottom: 12px;
+  }
+  
+  #footer .footer-top .footer-links 
+  {
+    margin-bottom: 30px;
+  }
+  
+  #footer .footer-top .footer-links ul 
+  {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #footer .footer-top .footer-links ul i 
+  {
+    padding-right: 2px;
+    color: #cda45e;
+    font-size: 18px;
+    line-height: 1;
+  }
+  
+  #footer .footer-top .footer-links ul li 
+  {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  #footer .footer-top .footer-links ul li:first-child 
+  {
+    padding-top: 0;
+  }
+  
+  #footer .footer-top .footer-links ul a 
+  {
+    color: #fff;
+    transition: 0.3s;
+    display: inline-block;
+    line-height: 1;
+    text-decoration: none;
+  }
+  
+  #footer .footer-top .footer-links ul a:hover 
+  {
+    color: #cda45e;
+  }
+  
+
+  #footer .footer-top .info 
+  {
+    width: 100%;
+  }
+  
+  #footer .footer-top .info i 
+  {
+    font-size: 20px;
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: #cda45e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  #footer .footer-top .info h4 
+  {
+    padding: 0 0 0 60px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  #footer .footer-top .info p 
+  {
+    padding: 0 0 0 60px;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #bab3a6;
+  }
+  
+  #footer .footer-top .info .open-hours,
+  #footer .footer-top .info .email,
+  #footer .footer-top .info .phone 
+  {
+    margin-top: 40px;
+  }
+  
+ 
+ 
+
+  .login
+  {
+    font-size: 36px;
+    font-weight: 700;
+    font-family: "Playfair Display", serif;
+    color: #cda45e;
+  }
+
+  
+  
+
+
+

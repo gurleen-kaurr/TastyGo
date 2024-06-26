@@ -1,9 +1,18 @@
-# TastyGo
+# Online Food Delivery (TastyGo)
 ![Banner Image](tastygo1.png)
-An online food ordering and portfolio website for a Restaurant.
-It includes various features:
-1. Login/ Signup
-2. Feedback Form
-3. Cart
+A Django-based online food delivery platform that allows users to browse products, view details, potentially create orders, and check order status.
+## Features
+1.  Menu Page
+![One Image](tastygo8.png)
+
+2.  Login/ Signup
+![One Image](tastygo2.png)
+
+3. Feedback Form
+![One Image](tastygo4.png)
+
 4. Checkout Page
+![One Image](tastygo6.png)
+
 5. Order Details
+![One Image](tastygo7.png)

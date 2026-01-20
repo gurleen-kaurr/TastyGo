@@ -13,8 +13,7 @@ TastyGo is an online food ordering web application that allows users to browse f
 - Add and remove items from cart  
 - Order summary and checkout flow  
 - Responsive design  
-- Login and signup (if implemented)  
-- Admin panel (if implemented)  
+- Login and signup
 
 ---
 

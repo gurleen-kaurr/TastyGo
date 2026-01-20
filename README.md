@@ -1,8 +1,6 @@
-# Online Food Delivery (TastyGo)
+#  TastyGo – Online Food Ordering Website
 ![Banner Image](tastygo1.png)
 A Django-based online food delivery platform that allows users to browse products, view details, potentially create orders, and check order status.
-
-#  TastyGo – Online Food Ordering Website
 
 TastyGo is an online food ordering web application that allows users to browse food items, add them to a cart, and place orders easily. This project is built to simulate real-world food delivery platforms and to practice web development concepts.
 
